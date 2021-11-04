@@ -1,10 +1,14 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Todo Redux A</h1>
-    </div>
+    <Container maxWidth="xs">
+      <TodoInput />
+      <TodoList />
+    </Container>
   );
 }
 
